@@ -1,0 +1,15 @@
+{
+  "name": "markdown_to_word_demo",
+  "version": "0.0.1",
+  "authors": [
+    "Ben Balter <ben.balter@github.com>"
+  ],
+  "description": "Converts GitHub-flavored Markdown to a Word document",
+  "main": "Procfile",
+  "license": "MIT",
+  "homepage": "https://github.com/benbalter/markdown_to_word",
+  "private": true,
+  "dependencies": {
+    "bootstrap": "~3.3.4"
+  }
+}

@@ -1,0 +1,12 @@
+<% unless error.nil? %>
+  <div class="alert alert-danger">
+    <%= error %>
+  </div>
+<% end %>
+
+<form class="form" method="POST" id="form">
+  <div class="form-group">
+    <textarea class="form-control" rows="15" name="markdown" id="markdown" placeholder="Paste your markdown here..."></textarea>
+  </div>
+  <input type="submit" class="btn btn-primary" value="Convert" id="submit">
+</form>
