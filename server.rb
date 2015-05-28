@@ -12,7 +12,7 @@ module MarkdownToWordServer
     post "/" do
       doc = MarkdownToWord.convert(params["markdown"])
       content_type 'application/vnd.openxmlformats-officedocument.wordprocessingml.document'
-      attachment "output.docx", :attachment
+      attachment "document-#{Time.now.strftime("%Y%m%d")}-revised-final-revised.docx", :attachment
       etag doc.hash
       doc.contents
     end
