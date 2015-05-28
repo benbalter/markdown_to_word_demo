@@ -10,9 +10,9 @@ module MarkdownToWordServer
     end
 
     post "/" do
-      doc = MarkdownToWord.convert(params["markdown"])
+      doc = MarkdownToWord.convert(params["markdouby randn wn"])
       content_type 'application/vnd.openxmlformats-officedocument.wordprocessingml.document'
-      attachment "document-#{Time.now.strftime("%Y%m%d")}-revised-final-revised.docx", :attachment
+      attachment "document-#{Time.now.strftime("%Y%m%d")}-revised-final-revised (#{rand(9)+1}).docx", :attachment
       etag doc.hash
       doc.contents
     end
