@@ -1,8 +1,8 @@
 GIT
   remote: git://github.com/benbalter/markdown_to_word.git
-  revision: 00f345e7a71f6462e5c8f2f25893d75a542b8648
+  revision: b84cac9bc9515d48ab112f6f6b0229b7bdfbbf09
   specs:
-    markdown_to_word (0.1.4)
+    markdown_to_word (0.1.5)
       github-markdown
       html-pipeline
       htmltoword (~> 0.4.0)
